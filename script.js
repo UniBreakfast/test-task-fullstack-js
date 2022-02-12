@@ -47,7 +47,7 @@ function handleCheck(e) {
   const label = box.nextSibling.textContent
   if (box.checked && !checked.includes(label)) checked.push(label)
   else if (!box.checked && checked.includes(label))
-    checked = ckecked.filter(l => l != label)
+    checked = checked.filter(l => l != label)
   else return
   localStorage.poc_faboj_checked = JSON.stringify(checked)
 }
